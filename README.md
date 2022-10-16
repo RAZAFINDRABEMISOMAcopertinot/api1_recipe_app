@@ -9,3 +9,11 @@ CLONE THE PROJECT
 BUILD A CONTAINER
 
 > > docker build .
+
+BUILD A DOCKER-COMPOSE IMAGE
+
+> > docker-compose build
+
+CREATE A DJANGO PROJECT
+
+> > docker-compose run app sh -c "django-admin.py startproject app ."
