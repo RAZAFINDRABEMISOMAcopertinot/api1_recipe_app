@@ -27,3 +27,11 @@ RUN A DJANGO TEST
 > > docker-compose run app sh -c "python manage.py test"
 
 > > docker-compose run app sh -c "python manage.py test && flake8"
+
+MAKE MIGRATIONS DJANGO
+
+> > docker-compose run app sh -c "python manage.py makemigrations core"
+
+MIGRATE A MIGRATION
+
+> > docker-compose run app sh -c "python manage.py migrate core"
