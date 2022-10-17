@@ -16,4 +16,14 @@ BUILD A DOCKER-COMPOSE IMAGE
 
 CREATE A DJANGO PROJECT
 
-> > docker-compose run app sh -c "django-admin.py startproject app ."
+> > docker-compose run app sh -c "django-admin startproject app ."
+
+CREATE A DJANGO APP
+
+> > docker-compose run app sh -c "django-admin startapp core"
+
+RUN A DJANGO TEST
+
+> > docker-compose run app sh -c "python manage.py test"
+
+> > docker-compose run app sh -c "python manage.py test && flake8"
